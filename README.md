@@ -2,6 +2,10 @@
 
 **Zespół:** Jonasz Bals, Maksymilian Bruździak
 
+---
+
+### **Opis projektu:**
+
 Dział Informatyki Biura Turystycznego “PITAYA” posiada szeroki wachlarz ofert imprez
 turystycznych przystosowanych do różnych potencjalnych uczestników. Oferty są
 systematycznie uzupełniane, edytowane, ewentualnie usuwane. Zainteresowanie imprezami
@@ -12,7 +16,7 @@ System obsługują wyznaczeni konsultanci, którzy pełnią rolę pracowników b
 administrator, który monitoruje system w celu znalezienia potencjalnych niedociągnięć i
 pomyłek.
 
-#
+---
 
 **Wymagania funkcjonalne systemu - System powinien:**
 - pozwalać klientom na przeglądanie dostępnych ofert imprez turystycznych
@@ -23,7 +27,7 @@ pomyłek.
 - dbać o prywatność i ochronę danych osobowych, zgodnie z regulacjami prawnymi
 - być zdolny do dostosowywania się do rosnącej liczby użytkowników i danych
 
-#
+---
 
 ### **Odnośniki:**
 
