@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="card">
+    <h2>Formularz rezerwacji</h2>
+    <h3>Wycieczka: {{ oferta.nazwa }}</h3>
+    <p>Cena: {{ oferta.cena }} PLN za osobę</p>
+    
+    <form method="POST">
+        <div style="margin-bottom: 15px;">
+            <label>Data rozpoczęcia:</label><br>
+            <input type="date" name="dataOd" required style="padding: 8px; width: 100%;">
+        </div>
+        <div style="margin-bottom: 15px;">
+            <label>Data zakończenia:</label><br>
+            <input type="date" name="dataDo" required style="padding: 8px; width: 100%;">
+        </div>
+        <div style="margin-bottom: 15px;">
+            <label>Liczba osób (miejsc):</label><br>
+            <input type="number" name="liczbaMiejsc" min="1" value="1" required style="padding: 8px; width: 100%;">
+        </div>
+        <button type="submit" class="btn">Potwierdź rezerwację</button>
+    </form>
+</div>
+{% endblock %}

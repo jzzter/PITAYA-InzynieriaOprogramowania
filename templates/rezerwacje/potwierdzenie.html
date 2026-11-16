@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="card" style="text-align: center;">
+    <h2 style="color: green;">Sukces! Twoja rezerwacja została pomyślnie potwierdzona.</h2>
+    <p>Numer Twojej rezerwacji: <strong>{{ nr_rezerwacji }}</strong></p>
+    <a href="/moje-rezerwacje" class="btn">Przejdź do moich rezerwacji</a>
+</div>
+{% endblock %}

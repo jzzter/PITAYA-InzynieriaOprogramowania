@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Moje rezerwacje</h2>
+{% if not rezerwacje %}
+    <p>Brak historii rezerwacji.</p>
+{% else %}
+    {% for r in rezerwacje %}
+    <div class="card" style="display: flex; justify-content: space-between; align-items: center;">
+        <div>
+            <h3>Rezerwacja {{ r.nrRezerwacji }}</h3>
+            <p><strong>Wycieczka:</strong> {{ r.nazwa_oferty }} ({{ r.lokacja }})</p>
+            <p><strong>Termin:</strong> {{ r.dataOd }} do {{ r.dataDo }} | <strong>Miejsc:</strong> {{ r.liczbaMiejsc }}</p>
+            <p><strong>Status:</strong> 
+                <span style="font-weight: bold; color: {% if r.status == 'Anulowane' %}red{% else %}green{% endif %};">
+                    {{ r.status }}
+                </span>
+            </p>
+        </div>
+        <div>
+            {% if r.status != 'Anulowane' %}
+            <form method="POST" action="/moje-rezerwacje/anuluj/{{ r.nrRezerwacji }}">
+                <button type="submit" class="btn btn-secondary" onclick="return confirm('Czy na pewno chcesz anulować?')">Anuluj rezerwację</button>
+            </form>
+            {% endif %}
+        </div>
+    </div>
+    {% endfor %}
+{% endif %}
+{% endblock %}
