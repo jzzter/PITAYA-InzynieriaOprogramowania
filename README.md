@@ -29,6 +29,34 @@ pomyłek.
 
 ---
 
+### **Wymagania / użyte technologie:**
+* Python 3.8+
+* Flask
+* SQLite (wbudowany w Pythona)
+
+---
+
+### **Uruchomienie lokalne:**
+
+**Windows (PowerShell)**
+```powershell
+py -3 -m venv .venv
+pip install -r requirements.txt
+python app.py
+```
+
+**Linux / macOS**
+```bash
+python3 -m venv .venv
+pip install -r requirements.txt
+python app.py
+```
+Baza danych `pitaya.db` zostanie zainicjalizowana automatycznie przy pierwszym uruchomieniu na podstawie pliku `schema.sql`.
+
+Aplikacja będzie dostępna pod adresem: [http://127.0.0.1:5000](http://127.0.0.1:5000)
+
+---
+
 ### **Odnośniki:**
 
 Repozytorium Github projektu: https://github.com/jzzter/PITAYA-InzynieriaOprogramowania/
